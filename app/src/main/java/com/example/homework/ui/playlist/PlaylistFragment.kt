@@ -1,11 +1,11 @@
 package com.example.homework.ui.playlist
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.homework.R
@@ -25,7 +25,7 @@ class PlaylistFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentPlaylistBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -47,13 +47,25 @@ class PlaylistFragment : Fragment() {
     }
 
     private fun showSingerDetails(singer: Singer) {
-        Toast.makeText(requireContext(), singer.fullName , Toast.LENGTH_SHORT).show()
+        Toast.makeText(requireContext(), singer.fullName, Toast.LENGTH_SHORT).show()
     }
 
     private fun getSongs() {
         songs = listOf(
-            Song(Singer("John Doe", "John", "18 y.o. male singer"), "John's song", 150, R.drawable.ic_launcher_foreground, 0),
-            Song(Singer("Jane Doe", "Jane", "18 y.o. female singer"), "Jane's song", 150, R.drawable.ic_launcher_foreground, 1)
+            Song(
+                Singer("John Doe", "John", "18 y.o. male singer"),
+                "John's song",
+                150,
+                R.drawable.ic_launcher_foreground,
+                0
+            ),
+            Song(
+                Singer("Jane Doe", "Jane", "18 y.o. female singer"),
+                "Jane's song",
+                150,
+                R.drawable.ic_launcher_foreground,
+                1
+            )
         )
         songAdapter.submitList(songs)
     }

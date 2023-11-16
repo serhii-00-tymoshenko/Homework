@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/playlistFragment"
         android:name="com.example.homework.ui.playlist.PlaylistFragment"
-        android:label="fragment_playlist"
-        tools:layout="@layout/fragment_playlist" >
+        android:label="Playlist"
+        tools:layout="@layout/fragment_playlist">
         <action
             android:id="@+id/action_playlistFragment_to_singerFragment"
             app:destination="@id/singerFragment" />
@@ -17,11 +17,11 @@
     <fragment
         android:id="@+id/singerFragment"
         android:name="com.example.homework.ui.singer.SingerFragment"
-        android:label="fragment_singer"
+        android:label="Singer"
         tools:layout="@layout/fragment_singer" />
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.homework.ui.settings.SettingsFragment"
-        android:label="fragment_settings"
+        android:label="Settings"
         tools:layout="@layout/fragment_settings" />
 </navigation>

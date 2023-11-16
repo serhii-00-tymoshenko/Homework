@@ -7,4 +7,5 @@
     <string name="playlist_title">Playlist</string>
     <string name="singer_title">Singer</string>
     <string name="settings_title">Settings</string>
+    <string name="current_user_photo_description">Current user photo</string>
 </resources>
