@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/playlistFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_playlist"
+        android:title="@string/playlist_title" />
+
+    <item
+        android:id="@+id/singerFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_singer"
+        android:title="@string/singer_title" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings_title" />
+</menu>
