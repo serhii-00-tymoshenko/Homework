@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.homework.R
 import com.example.homework.adapters.song.SongAdapter
+import com.example.homework.adapters.song.SongAdapterJava
 import com.example.homework.data.entities.Singer
 import com.example.homework.data.entities.Song
 import com.example.homework.databinding.FragmentPlaylistBinding
@@ -19,7 +20,7 @@ class PlaylistFragment : Fragment() {
     private val binding get() = _binding!!
     private lateinit var songs: List<Song>
     private lateinit var songRecycler: RecyclerView
-    private lateinit var songAdapter: SongAdapter
+    private lateinit var songAdapter: SongAdapterJava
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,7 +38,7 @@ class PlaylistFragment : Fragment() {
     }
 
     private fun setupSongRecycler() {
-        songAdapter = SongAdapter { singer -> showSingerDetails(singer) }
+        songAdapter = SongAdapterJava()
         songRecycler = binding.songRecyclerView
         songRecycler.apply {
             adapter = songAdapter
